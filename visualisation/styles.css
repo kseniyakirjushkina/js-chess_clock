@@ -1,0 +1,115 @@
+:root {
+  --green: #76b947;
+  --color-clock: #2a2a2a;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #1a1a1a;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.players-clock {
+  background: var(--color-clock);
+  border-radius: 20px;
+  width: 400px;
+}
+
+.player {
+  padding: 40px;
+  border-radius: 0 0 20px 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.player:hover {
+  background: #333;
+  border-radius: 0 0 20px 20px;
+}
+
+.player.active {
+  background: #444;
+  border-radius: 0 0 20px 20px;
+  box-shadow: inset 0 0 5px 2px rgba(118, 185, 71, 0.4);
+}
+
+.player.black {
+  transform: rotate(180deg);
+  color: black;
+}
+
+.time {
+  font-size: 64px;
+  font-family: monospace;
+  margin: 10px 0;
+}
+
+.buttons {
+  background: #1a1a1a;
+  padding: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.btn-start {
+  background: var(--green);
+  flex: 1;
+}
+
+button:disabled {
+  background: #ccc;
+  cursor: default;
+}
+
+.btn-reset {
+  background: #555;
+}
+
+.window {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.window-box {
+  background: var(--color-clock);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+  font-size: 20px;
+}
+
+.btn-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: var(--green);
+  cursor: pointer;
+}
+
+.hidden {
+  display: none !important;
+}
