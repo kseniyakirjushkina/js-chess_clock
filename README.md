@@ -54,29 +54,26 @@ const chessClock = createChessClock(gameTime, bonusTime = 2000);
 ### Пример использования
 
 ```javascript
-const clock = createChessClock(300000, 2000); //  часы с 5 минутами игры для каждого игрока и 2 секундами прибавления за ход
+const clock = createChessClock(300, 200); //  часы с 0.3 секундами игры для каждого игрока и 0.2 секундами прибавления за ход
 clock.switchPlayer(); // начало игры (то есть начало хода белых, считаем что белые всегда ходят первыми)
 
 console.log(clock.getState()); // пока ничего не произошло
 // {
-//   whiteTime: 300000,
-//   blackTime: 300000,
-//   activePlayer: "white",
+//   whiteTime: 300,
+//   blackTime: 300,
+//   activePlayer: 'white',
 //   gameOver: false
 // }
 
 setTimeout(() => {
     console.log(clock.getState());
-}, 100000);
+}, 10000);
 // {
-//   whiteTime: 200000,
-//   blackTime: 300000,
-//   activePlayer: "white",
-//   gameOver: false
+//    whiteTime: -700,
+//    blackTime: 300,
+//    activePlayer: 'white',
+//    gameOver: true
 // }
-
-
-clock.switchPlayer(); // белые сделали ход и начался ход черных
 ```
 
 ## Особенности реализации
