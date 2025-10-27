@@ -99,7 +99,7 @@ setTimeout(() => {
 
 - [Википедия: Шахматные часы](https://ru.wikipedia.org/wiki/Шахматные_часы)
 - [Lichess.org](https://lichess.ru) — тут используются те самые шахматные часы!
-- Визуализация шахматных часов куда можно вставить свою функцию createChessClock и потыкаться [тут](https://sq5j7l.csb.app/)
+- Визуализация шахматных часов куда можно вставить свою функцию createChessClock и потыкаться [тут](https://fctfrh.csb.app/)
 
 
 
