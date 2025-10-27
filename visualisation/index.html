@@ -1,34 +1,33 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+    <meta charset="UTF-8"/>
     <title>Шахматные часы</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="players-clock">
-      <div class="player black" id="black" onclick="switchPlayer()">
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<div class="players-clock">
+    <div class="player black" id="black" onclick="switchPlayer()">
         <div>● Черные</div>
         <div class="time" id="black-time">00:00</div>
-      </div>
-      <div class="buttons">
+    </div>
+    <div class="buttons">
         <button class="btn-start" id="btn-start" onclick="startGame()">
-          Старт
+            Старт
         </button>
         <button class="btn-reset" onclick="resetGame()">Сброс</button>
-      </div>
-      <div class="player active" id="white" onclick="switchPlayer()">
+    </div>
+    <div class="player active" id="white" onclick="switchPlayer()">
         <div class="time" id="white-time">00:00</div>
         <div>● Белые</div>
-      </div>
     </div>
-    <div class="window hidden" id="window">
-      <div class="window-box">
+</div>
+<div class="window hidden" id="window">
+    <div class="window-box">
         <button class="btn-close" onclick="closeWindow()">×</button>
         <p id="winner"></p>
-      </div>
     </div>
-    </div>
-    <script src="script.js"></script>
-  </body>
+</div>
+<script type="module" src="script.js"></script>
+</body>
 </html>
