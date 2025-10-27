@@ -65,6 +65,17 @@ console.log(clock.getState()); // пока ничего не произошло
 //   gameOver: false
 // }
 
+setTimeout(() => {
+    console.log(clock.getState());
+}, 100000);
+// {
+//   whiteTime: 200000,
+//   blackTime: 300000,
+//   activePlayer: "white",
+//   gameOver: false
+// }
+
+
 clock.switchPlayer(); // белые сделали ход и начался ход черных
 ```
 
