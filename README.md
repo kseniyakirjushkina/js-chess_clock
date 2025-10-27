@@ -68,7 +68,7 @@ clock.switchPlayer(); // начало игры (то есть начало хо�
 
 setTimeout(() => {
     console.log(clock.getState());
-}, 1000);
+}, 1000); // прошла секунда игры
 // {
 //    whiteTime: 2000,
 //    blackTime: 3000,
