@@ -4,5 +4,5 @@ export function createChessClock(gameTime, bonusTime = 2000) {
         switchPlayer,
         getState
     };
-
 }
+
