@@ -68,6 +68,8 @@ clock.switchPlayer(); // начало игры (то есть начало хо�
 
 setTimeout(() => {
     console.log(clock.getState());
+    clock.switchPlayer();
+    console.log(clock.getState());
 }, 1000); // прошла секунда игры
 // {
 //    whiteTime: 2000,
@@ -75,6 +77,13 @@ setTimeout(() => {
 //    activePlayer: 'white',
 //    gameOver: false
 // }
+// {
+//   whiteTime: 4000, // за сделанный ход добавились 2 секунды
+//   blackTime: 3000,
+//   activePlayer: 'black', //игрок сменился
+//   gameOver: false
+// }
+
 ```
 
 ## Особенности реализации
